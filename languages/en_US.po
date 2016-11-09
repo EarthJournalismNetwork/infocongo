@@ -1,0 +1,739 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: infocongo\n"
+"POT-Creation-Date: 2015-09-22 23:11-0300\n"
+"PO-Revision-Date: 2015-09-22 23:14-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:1,2;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive-authors.php:9
+msgid "Our team. Nice to meet you!"
+msgstr ""
+
+#: archive-blog-post.php:11
+msgid "Blog"
+msgstr ""
+
+#: archive-blog-post.php:22
+msgid "Categories"
+msgstr ""
+
+#: archive-dataset.php:11 inc/datasets.php:22 inc/datasets.php:32
+#: single-dataset.php:10
+msgid "Datasets"
+msgstr ""
+
+#: archive-dataset.php:22
+msgid "Sources"
+msgstr ""
+
+#: archive-dataset.php:32
+msgid "Licenses"
+msgstr ""
+
+#: archive-map.php:11 archive.php:11
+msgid "Maps"
+msgstr ""
+
+#: content-embed.php:16 header.php:17
+msgid "Page"
+msgstr ""
+
+#: content-map-group.php:28
+msgid "More..."
+msgstr ""
+
+#: content-map-group.php:43
+msgid "View all maps"
+msgstr ""
+
+#: footer.php:20
+msgid "A project by"
+msgstr ""
+
+#: footer.php:25
+msgid "Supported by"
+msgstr ""
+
+#: functions.php:146
+msgctxt "Taxonomy General Name"
+msgid "Topics"
+msgstr ""
+
+#: functions.php:147
+msgctxt "Taxonomy Singular Name"
+msgid "Topic"
+msgstr ""
+
+#: functions.php:148 index.php:107
+msgid "Topics"
+msgstr ""
+
+#: functions.php:149
+msgid "All Topics"
+msgstr ""
+
+#: functions.php:150
+msgid "Parent Topics"
+msgstr ""
+
+#: functions.php:151
+msgid "Parent Topic:"
+msgstr ""
+
+#: functions.php:152
+msgid "New Topic Name"
+msgstr ""
+
+#: functions.php:153
+msgid "Add New Topic"
+msgstr ""
+
+#: functions.php:154
+msgid "Edit Topic"
+msgstr ""
+
+#: functions.php:155
+msgid "Update Topic"
+msgstr ""
+
+#: functions.php:156
+msgid "View Topic"
+msgstr ""
+
+#: functions.php:157
+msgid "Separate Topic with commas"
+msgstr ""
+
+#: functions.php:158
+msgid "Add or remove Topic"
+msgstr ""
+
+#: functions.php:159 functions.php:192
+msgid "Choose from the most used"
+msgstr ""
+
+#: functions.php:160
+msgid "Popular Topics"
+msgstr ""
+
+#: functions.php:161
+msgid "Search Topics"
+msgstr ""
+
+#: functions.php:162 functions.php:195
+msgid "Not Found"
+msgstr ""
+
+#: functions.php:179
+msgctxt "Taxonomy General Name"
+msgid "Countries"
+msgstr ""
+
+#: functions.php:180
+msgctxt "Taxonomy Singular Name"
+msgid "Country"
+msgstr ""
+
+#: functions.php:181 index.php:163
+msgid "Countries"
+msgstr ""
+
+#: functions.php:182
+msgid "All Countries"
+msgstr ""
+
+#: functions.php:183
+msgid "Parent Countries"
+msgstr ""
+
+#: functions.php:184
+msgid "Parent Country:"
+msgstr ""
+
+#: functions.php:185
+msgid "New Country Name"
+msgstr ""
+
+#: functions.php:186
+msgid "Add New Country"
+msgstr ""
+
+#: functions.php:187
+msgid "Edit Country"
+msgstr ""
+
+#: functions.php:188
+msgid "Update Country"
+msgstr ""
+
+#: functions.php:189
+msgid "View Country"
+msgstr ""
+
+#: functions.php:190
+msgid "Separate Country with commas"
+msgstr ""
+
+#: functions.php:191
+msgid "Add or remove Country"
+msgstr ""
+
+#: functions.php:193
+msgid "Popular Countries"
+msgstr ""
+
+#: functions.php:194
+msgid "Search Countries"
+msgstr ""
+
+#: functions.php:213 functions.php:227
+msgid "Publishers"
+msgstr ""
+
+#: functions.php:214
+msgid "Publisher"
+msgstr ""
+
+#: functions.php:215
+msgid "Search publishers"
+msgstr ""
+
+#: functions.php:216
+msgid "Popular publishers"
+msgstr ""
+
+#: functions.php:217
+msgid "All publishers"
+msgstr ""
+
+#: functions.php:218
+msgid "Parent publisher"
+msgstr ""
+
+#: functions.php:219
+msgid "Parent publisher:"
+msgstr ""
+
+#: functions.php:220
+msgid "Edit publisher"
+msgstr ""
+
+#: functions.php:221
+msgid "Update publisher"
+msgstr ""
+
+#: functions.php:222
+msgid "Add new publisher"
+msgstr ""
+
+#: functions.php:223
+msgid "New publisher name"
+msgstr ""
+
+#: functions.php:224
+msgid "Separate publishers with commas"
+msgstr ""
+
+#: functions.php:225
+msgid "Add or remove publishers"
+msgstr ""
+
+#: functions.php:226
+msgid "Choose from most used publishers"
+msgstr ""
+
+#: functions.php:254
+msgctxt "Post Type General Name"
+msgid "Authors"
+msgstr ""
+
+#: functions.php:255
+msgctxt "Post Type Singular Name"
+msgid "Author"
+msgstr ""
+
+#: functions.php:256 functions.php:257
+msgid "Authors"
+msgstr ""
+
+#: functions.php:258
+msgid "Parent author:"
+msgstr ""
+
+#: functions.php:259
+msgid "All authors"
+msgstr ""
+
+#: functions.php:260
+msgid "Add New author"
+msgstr ""
+
+#: functions.php:261
+msgid "Add New"
+msgstr ""
+
+#: functions.php:262
+msgid "New author"
+msgstr ""
+
+#: functions.php:263
+msgid "Edit author"
+msgstr ""
+
+#: functions.php:264
+msgid "Update author"
+msgstr ""
+
+#: functions.php:265
+msgid "View author"
+msgstr ""
+
+#: functions.php:266
+msgid "Search author"
+msgstr ""
+
+#: functions.php:267
+msgid "Not found"
+msgstr ""
+
+#: functions.php:268
+msgid "Not found in Trash"
+msgstr ""
+
+#: functions.php:271
+msgid "Author"
+msgstr ""
+
+#: functions.php:272
+msgid "Authors of the team"
+msgstr ""
+
+#: functions.php:357
+msgid ""
+"Success! Thank you, your story will be reviewed by one of our editors and "
+"soon will be online."
+msgstr ""
+
+#: functions.php:358
+msgid "You're being redirect to the home page in 4 seconds."
+msgstr ""
+
+#: functions.php:360
+msgid "Oops, please try again in a few minutes."
+msgstr ""
+
+#: inc/advanced-navigation.php:108
+msgid "Text search"
+msgstr ""
+
+#: inc/advanced-navigation.php:110
+msgid "Type your search here"
+msgstr ""
+
+#: inc/advanced-navigation.php:114
+msgid "From"
+msgstr ""
+
+#: inc/advanced-navigation.php:118
+msgid "To"
+msgstr ""
+
+#: inc/advanced-navigation.php:122
+msgid "Filter"
+msgstr ""
+
+#: inc/advanced-navigation.php:134 inc/advanced-navigation.php:145
+msgid "Cancel filters"
+msgstr ""
+
+#: inc/advanced-navigation.php:142 inc/template-functions.php:42
+msgid "More filters"
+msgstr ""
+
+#: inc/datasets.php:23
+msgid "Dataset"
+msgstr ""
+
+#: inc/datasets.php:24
+msgid "Add dataset"
+msgstr ""
+
+#: inc/datasets.php:25
+msgid "Add new dataset"
+msgstr ""
+
+#: inc/datasets.php:26
+msgid "Edit dataset"
+msgstr ""
+
+#: inc/datasets.php:27
+msgid "New dataset"
+msgstr ""
+
+#: inc/datasets.php:28
+msgid "View dataset"
+msgstr ""
+
+#: inc/datasets.php:29
+msgid "Search dataset"
+msgstr ""
+
+#: inc/datasets.php:30
+msgid "No dataset found"
+msgstr ""
+
+#: inc/datasets.php:31
+msgid "No dataset found in the trash"
+msgstr ""
+
+#: inc/datasets.php:38
+msgid "infoamazonia Datasets"
+msgstr ""
+
+#: inc/datasets.php:55
+msgctxt "License general name"
+msgid "Licenses"
+msgstr ""
+
+#: inc/datasets.php:56
+msgctxt "License singular name"
+msgid "License"
+msgstr ""
+
+#: inc/datasets.php:57
+msgid "All licenses"
+msgstr ""
+
+#: inc/datasets.php:58
+msgid "Edit license"
+msgstr ""
+
+#: inc/datasets.php:59
+msgid "View license"
+msgstr ""
+
+#: inc/datasets.php:60
+msgid "Update license"
+msgstr ""
+
+#: inc/datasets.php:61
+msgid "Add new license"
+msgstr ""
+
+#: inc/datasets.php:62
+msgid "New license name"
+msgstr ""
+
+#: inc/datasets.php:63
+msgid "Parent license"
+msgstr ""
+
+#: inc/datasets.php:64
+msgid "Parent license:"
+msgstr ""
+
+#: inc/datasets.php:65
+msgid "Search licenses"
+msgstr ""
+
+#: inc/datasets.php:66
+msgid "Popular licenses"
+msgstr ""
+
+#: inc/datasets.php:67
+msgid "Separate licenses with commas"
+msgstr ""
+
+#: inc/datasets.php:68
+msgid "Add or remove licenses"
+msgstr ""
+
+#: inc/datasets.php:69
+msgid "Choose from most used licenses"
+msgstr ""
+
+#: inc/datasets.php:70
+msgid "No licenses found"
+msgstr ""
+
+#: inc/datasets.php:85
+msgctxt "Source general name"
+msgid "Sources"
+msgstr ""
+
+#: inc/datasets.php:86
+msgctxt "Source singular name"
+msgid "Source"
+msgstr ""
+
+#: inc/datasets.php:87
+msgid "All sources"
+msgstr ""
+
+#: inc/datasets.php:88
+msgid "Edit source"
+msgstr ""
+
+#: inc/datasets.php:89
+msgid "View source"
+msgstr ""
+
+#: inc/datasets.php:90
+msgid "Update source"
+msgstr ""
+
+#: inc/datasets.php:91
+msgid "Add new source"
+msgstr ""
+
+#: inc/datasets.php:92
+msgid "New source name"
+msgstr ""
+
+#: inc/datasets.php:93
+msgid "Parent source"
+msgstr ""
+
+#: inc/datasets.php:94
+msgid "Parent source:"
+msgstr ""
+
+#: inc/datasets.php:95
+msgid "Search sources"
+msgstr ""
+
+#: inc/datasets.php:96
+msgid "Popular sources"
+msgstr ""
+
+#: inc/datasets.php:97
+msgid "Separate sources with commas"
+msgstr ""
+
+#: inc/datasets.php:98
+msgid "Add or remove sources"
+msgstr ""
+
+#: inc/datasets.php:99
+msgid "Choose from most used sources"
+msgstr ""
+
+#: inc/datasets.php:100
+msgid "No sources found"
+msgstr ""
+
+#: inc/geocode-box.php:17 inc/submit-story.php:13
+msgid "Close"
+msgstr ""
+
+#: inc/geocode-box.php:19
+msgid "Finish geocoding"
+msgstr ""
+
+#: inc/submit-story.php:14 index.php:63 section-actions.php:5
+#: section-submit-call.php:6
+msgid "Submit a story"
+msgstr ""
+
+#: inc/submit-story.php:15
+msgid ""
+"Do you have news to share from Congo? Contribute to this map by submitting "
+"your story. Help broaden the understanding of the global impact of this "
+"important region in the world."
+msgstr ""
+
+#: inc/submit-story.php:20
+msgid "Submit a url"
+msgstr ""
+
+#: inc/submit-story.php:21
+msgid "Submit full story"
+msgstr ""
+
+#: inc/submit-story.php:27 inc/submit-story.php:85
+msgid "Your full name"
+msgstr ""
+
+#: inc/submit-story.php:31 inc/submit-story.php:89
+msgid "E-mail"
+msgstr ""
+
+#: inc/submit-story.php:35
+msgid "Reporter"
+msgstr ""
+
+#: inc/submit-story.php:39
+msgid "Story title"
+msgstr ""
+
+#: inc/submit-story.php:43
+msgid "Story text"
+msgstr ""
+
+#: inc/submit-story.php:47 inc/submit-story.php:93
+msgid "Story url"
+msgstr ""
+
+#: inc/submit-story.php:51
+msgid "Lead picture"
+msgstr ""
+
+#: inc/submit-story.php:56 inc/submit-story.php:98
+msgid "Story location"
+msgstr ""
+
+#: inc/submit-story.php:58 inc/submit-story.php:100
+msgid "Find location on map"
+msgstr ""
+
+#: inc/submit-story.php:63 inc/submit-story.php:105
+msgid "Latitude:"
+msgstr ""
+
+#: inc/submit-story.php:64 inc/submit-story.php:106
+msgid "Longitude:"
+msgstr ""
+
+#: inc/submit-story.php:73
+msgid "Publishing date"
+msgstr ""
+
+#: inc/submit-story.php:77
+msgid "Notes to the infoamazonia editor"
+msgstr ""
+
+#: inc/submit-story.php:80 inc/submit-story.php:114
+msgid "Send story"
+msgstr ""
+
+#: inc/submit-story.php:135
+msgid "Missing information. Please fill all the required fields!"
+msgstr ""
+
+#: inc/submit-story.php:144
+msgid "Could not save submission"
+msgstr ""
+
+#: index.php:95 loop.php:23
+msgid "Read more"
+msgstr ""
+
+#: index.php:146
+msgid "See all stories about this topic"
+msgstr ""
+
+#: index.php:202
+msgid "See all stories about this country"
+msgstr ""
+
+#: loop-dataset.php:21
+msgid "View this data"
+msgstr ""
+
+#: loop-dataset.php:26 single-map.php:37 taxonomy-country.php:29
+#: taxonomy-publisher.php:29 taxonomy-topic.php:29 taxonomy.php:24
+msgid "Download"
+msgstr ""
+
+#: loop-dataset.php:34 single-dataset.php:50
+msgid "Download from source"
+msgstr ""
+
+#: loop.php:24
+msgid "Share"
+msgstr ""
+
+#: search.php:5
+msgid "Search results for:"
+msgstr ""
+
+#: search.php:14
+msgid "Read More"
+msgstr ""
+
+#: section-actions.php:6
+msgid ""
+"Do you have news to share ? Contribute to this map by submitting your story."
+msgstr ""
+
+#: section-actions.php:10
+msgid "Customize and share"
+msgstr ""
+
+#: section-actions.php:11
+msgid ""
+"Create a custom map visualization with different news and spread the word."
+msgstr ""
+
+#: section-actions.php:15
+msgid "Get the data"
+msgstr ""
+
+#: section-actions.php:16
+msgid ""
+"Download all the researched data used to design our maps and help us remix "
+"it into new visualizations."
+msgstr ""
+
+#: section-publisher-description.php:10
+msgid "Visit"
+msgstr ""
+
+#: section-submit-call.php:4
+msgid ""
+"Do you have news to share? Contribute to this map by submitting your story. "
+"Help broaden the understanding of the global impact of this important region "
+"in the world."
+msgstr ""
+
+#: single-blog-post.php:13
+msgid "by"
+msgstr ""
+
+#: single-dataset.php:28
+msgid "Preview data"
+msgstr ""
+
+#: single-dataset.php:42
+msgid "Download this data"
+msgstr ""
+
+#: single-dataset.php:61
+msgid "License"
+msgstr ""
+
+#: single-dataset.php:63
+msgid "More data on this license"
+msgstr ""
+
+#: single-dataset.php:74
+msgid "Source"
+msgstr ""
+
+#: single-dataset.php:76
+msgid "More data from this source"
+msgstr ""
+
+#: single-map.php:35 taxonomy-country.php:27 taxonomy-publisher.php:27
+#: taxonomy-topic.php:27 taxonomy.php:22
+msgid "RSS Feed"
+msgstr ""
+
+#: single-map.php:36 taxonomy-country.php:28 taxonomy-publisher.php:28
+#: taxonomy-topic.php:28 taxonomy.php:23
+msgid "Get GeoJSON"
+msgstr ""
+
+#: single-map.php:66
+msgid "Embed this map"
+msgstr ""

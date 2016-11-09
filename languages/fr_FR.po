@@ -1,0 +1,761 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Infocongo\n"
+"POT-Creation-Date: 2015-09-22 23:18-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:1,2;_ex:1,2n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive-authors.php:9
+msgid "Our team. Nice to meet you!"
+msgstr "Notre équipe "
+
+#: archive-blog-post.php:11
+msgid "Blog"
+msgstr "Blog"
+
+#: archive-blog-post.php:22
+msgid "Categories"
+msgstr "Catégories"
+
+#: archive-dataset.php:11 inc/datasets.php:22 inc/datasets.php:32
+#: single-dataset.php:10
+msgid "Datasets"
+msgstr "Les ensembles de données"
+
+#: archive-dataset.php:22
+msgid "Sources"
+msgstr "Source"
+
+#: archive-dataset.php:32
+msgid "Licenses"
+msgstr "Licences"
+
+#: archive-map.php:11 archive.php:11
+msgid "Maps"
+msgstr "Cartes"
+
+#: content-embed.php:16 header.php:17
+msgid "Page"
+msgstr "page"
+
+#: content-map-group.php:28
+msgid "More..."
+msgstr "Plus"
+
+#: content-map-group.php:43
+msgid "View all maps"
+msgstr "Voir toutes les cartes"
+
+#: footer.php:20
+msgid "A project by"
+msgstr "Un projet de"
+
+#: footer.php:25
+msgid "Supported by"
+msgstr "Soutenu par"
+
+#: functions.php:146
+msgctxt "Taxonomy General Name"
+msgid "Topics"
+msgstr "Sujets"
+
+#: functions.php:147
+msgctxt "Taxonomy Singular Name"
+msgid "Topic"
+msgstr "Sujet"
+
+#: functions.php:148 index.php:107
+msgid "Topics"
+msgstr "Sujets"
+
+#: functions.php:149
+msgid "All Topics"
+msgstr "Tous les sujets"
+
+#: functions.php:150
+msgid "Parent Topics"
+msgstr "Thèmes parents"
+
+#: functions.php:151
+msgid "Parent Topic:"
+msgstr "Thème parents"
+
+#: functions.php:152
+msgid "New Topic Name"
+msgstr "Nom du nouveau sujet"
+
+#: functions.php:153
+msgid "Add New Topic"
+msgstr "Ajouter un nouveau sujet"
+
+#: functions.php:154
+msgid "Edit Topic"
+msgstr "Modifier le sujet"
+
+#: functions.php:155
+msgid "Update Topic"
+msgstr "Actualiser le sujet"
+
+#: functions.php:156
+msgid "View Topic"
+msgstr "Voir le sujet"
+
+#: functions.php:157
+msgid "Separate Topic with commas"
+msgstr "Séparez les sujet avec des virgules"
+
+#: functions.php:158
+msgid "Add or remove Topic"
+msgstr "Ajouter ou supprimer Sujet"
+
+#: functions.php:159 functions.php:192
+msgid "Choose from the most used"
+msgstr "Choisissez parmi les plus utilisés"
+
+#: functions.php:160
+msgid "Popular Topics"
+msgstr "Sujets populaires"
+
+#: functions.php:161
+msgid "Search Topics"
+msgstr "Rechercher Sujets"
+
+#: functions.php:162 functions.php:195
+msgid "Not Found"
+msgstr "Pas trouvé"
+
+#: functions.php:179
+msgctxt "Taxonomy General Name"
+msgid "Countries"
+msgstr "Pays"
+
+#: functions.php:180
+msgctxt "Taxonomy Singular Name"
+msgid "Country"
+msgstr "Pay"
+
+#: functions.php:181 index.php:163
+msgid "Countries"
+msgstr "Pays"
+
+#: functions.php:182
+msgid "All Countries"
+msgstr "Tous les pays"
+
+#: functions.php:183
+msgid "Parent Countries"
+msgstr "Pays parent"
+
+#: functions.php:184
+msgid "Parent Country:"
+msgstr "Pay parent"
+
+#: functions.php:185
+msgid "New Country Name"
+msgstr "Nom du nouveau pays"
+
+#: functions.php:186
+msgid "Add New Country"
+msgstr "Ajouter un nouveau pays"
+
+#: functions.php:187
+msgid "Edit Country"
+msgstr "Modifier Pays"
+
+#: functions.php:188
+msgid "Update Country"
+msgstr "Actualiser Pays"
+
+#: functions.php:189
+msgid "View Country"
+msgstr "Voir le Pays"
+
+#: functions.php:190
+msgid "Separate Country with commas"
+msgstr "séparée pays avec des virgules"
+
+#: functions.php:191
+msgid "Add or remove Country"
+msgstr "Ajouter ou supprimer des Pays"
+
+#: functions.php:193
+msgid "Popular Countries"
+msgstr "pays populaires"
+
+#: functions.php:194
+msgid "Search Countries"
+msgstr "Rechercher Pays"
+
+#: functions.php:213 functions.php:227
+msgid "Publishers"
+msgstr "Directeurs de publication"
+
+#: functions.php:214
+msgid "Publisher"
+msgstr "Directeur de publication"
+
+#: functions.php:215
+msgid "Search publishers"
+msgstr "recherche directeurs de publication"
+
+#: functions.php:216
+msgid "Popular publishers"
+msgstr "Directeurs de publication populaires"
+
+#: functions.php:217
+msgid "All publishers"
+msgstr "Tous les directeurs de publication"
+
+#: functions.php:218
+msgid "Parent publisher"
+msgstr "Directeurs de publication parent"
+
+#: functions.php:219
+msgid "Parent publisher:"
+msgstr "Directeur de publication parent"
+
+#: functions.php:220
+msgid "Edit publisher"
+msgstr "Modifier directeur de publication "
+
+#: functions.php:221
+msgid "Update publisher"
+msgstr "Actualiser le directeur de publication"
+
+#: functions.php:222
+msgid "Add new publisher"
+msgstr "Ajouter nouvel directeur de publication "
+
+#: functions.php:223
+msgid "New publisher name"
+msgstr "Ajouter le nom du directeurs de publication "
+
+#: functions.php:224
+msgid "Separate publishers with commas"
+msgstr "séparées avec des virgules les directeurs de publication"
+
+#: functions.php:225
+msgid "Add or remove publishers"
+msgstr "Ajouter ou supprimer les directeurs de publication "
+
+#: functions.php:226
+msgid "Choose from most used publishers"
+msgstr "Choisissez parmi les directeurs de publication les plus utilisés"
+
+#: functions.php:254
+msgctxt "Post Type General Name"
+msgid "Authors"
+msgstr "Auteurs"
+
+#: functions.php:255
+msgctxt "Post Type Singular Name"
+msgid "Author"
+msgstr "Auteur"
+
+#: functions.php:256 functions.php:257
+msgid "Authors"
+msgstr "Auteurs"
+
+#: functions.php:258
+msgid "Parent author:"
+msgstr "Auteur parent"
+
+#: functions.php:259
+msgid "All authors"
+msgstr "Tous les auteurs"
+
+#: functions.php:260
+msgid "Add New author"
+msgstr "Ajouter nouvel auteur"
+
+#: functions.php:261
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+#: functions.php:262
+msgid "New author"
+msgstr "Nouveau auteur"
+
+#: functions.php:263
+msgid "Edit author"
+msgstr "Modifier auteur"
+
+#: functions.php:264
+msgid "Update author"
+msgstr "Actualiser l'auteur"
+
+#: functions.php:265
+msgid "View author"
+msgstr "Voir auteur"
+
+#: functions.php:266
+msgid "Search author"
+msgstr "Recherche auteur"
+
+#: functions.php:267
+msgid "Not found"
+msgstr "Pas trouvé"
+
+#: functions.php:268
+msgid "Not found in Trash"
+msgstr "Pas trouvé dans la corbeille"
+
+#: functions.php:271
+msgid "Author"
+msgstr "Auteur"
+
+#: functions.php:272
+msgid "Authors of the team"
+msgstr "Auteurs de l'équipe"
+
+#: functions.php:357
+msgid ""
+"Success! Thank you, your story will be reviewed by one of our editors and "
+"soon will be online."
+msgstr ""
+"Succès! Merci, votre article sera examiné par un de nos rédacteurs et sera "
+"bientôt en ligne"
+
+#: functions.php:358
+msgid "You're being redirect to the home page in 4 seconds."
+msgstr "Vous être rediriger vers la page d'accueil en 4 secondes."
+
+#: functions.php:360
+msgid "Oops, please try again in a few minutes."
+msgstr "Oops, s'il vous plaît essayer de nouveau dans quelques minutes."
+
+#: inc/advanced-navigation.php:108
+msgid "Text search"
+msgstr "Recherche de texte"
+
+#: inc/advanced-navigation.php:110
+msgid "Type your search here"
+msgstr "Saisissez votre recherche ici"
+
+#: inc/advanced-navigation.php:114
+msgid "From"
+msgstr "De"
+
+#: inc/advanced-navigation.php:118
+msgid "To"
+msgstr "à"
+
+#: inc/advanced-navigation.php:122
+msgid "Filter"
+msgstr "Filtre"
+
+#: inc/advanced-navigation.php:134 inc/advanced-navigation.php:145
+msgid "Cancel filters"
+msgstr "Annuler filtres"
+
+#: inc/advanced-navigation.php:142 inc/template-functions.php:42
+msgid "More filters"
+msgstr "Plus de filtres"
+
+#: inc/datasets.php:23
+msgid "Dataset"
+msgstr "L'ensemble de données"
+
+#: inc/datasets.php:24
+msgid "Add dataset"
+msgstr "Ajouter ensemble de données"
+
+#: inc/datasets.php:25
+msgid "Add new dataset"
+msgstr "Ajouter nouveau ensemble de données"
+
+#: inc/datasets.php:26
+msgid "Edit dataset"
+msgstr "Modifier ensemble de données"
+
+#: inc/datasets.php:27
+msgid "New dataset"
+msgstr "Nouveau ensemble de données"
+
+#: inc/datasets.php:28
+msgid "View dataset"
+msgstr "Voir nouveau ensemble de données"
+
+#: inc/datasets.php:29
+msgid "Search dataset"
+msgstr "Recherche ensemble de données"
+
+#: inc/datasets.php:30
+msgid "No dataset found"
+msgstr "Aucun ensemble de données trouvé"
+
+#: inc/datasets.php:31
+msgid "No dataset found in the trash"
+msgstr "Aucun ensemble de données trouvé dans la corbeille "
+
+#: inc/datasets.php:38
+msgid "infoamazonia Datasets"
+msgstr "ensembles de données infoamazonia"
+
+#: inc/datasets.php:55
+msgctxt "License general name"
+msgid "Licenses"
+msgstr "licences"
+
+#: inc/datasets.php:56
+msgctxt "License singular name"
+msgid "License"
+msgstr "licence"
+
+#: inc/datasets.php:57
+msgid "All licenses"
+msgstr "toutes les licences"
+
+#: inc/datasets.php:58
+msgid "Edit license"
+msgstr "Modifier la licence"
+
+#: inc/datasets.php:59
+msgid "View license"
+msgstr "Voir la licence"
+
+#: inc/datasets.php:60
+msgid "Update license"
+msgstr "Actualiser la licence"
+
+#: inc/datasets.php:61
+msgid "Add new license"
+msgstr "Ajouter nouvelle licence"
+
+#: inc/datasets.php:62
+msgid "New license name"
+msgstr "Nouveau nom de la licence"
+
+#: inc/datasets.php:63
+msgid "Parent license"
+msgstr "Licence de Parent"
+
+#: inc/datasets.php:64
+msgid "Parent license:"
+msgstr "Licence de Parent"
+
+#: inc/datasets.php:65
+msgid "Search licenses"
+msgstr "recherche licences"
+
+#: inc/datasets.php:66
+msgid "Popular licenses"
+msgstr "licences populaires"
+
+#: inc/datasets.php:67
+msgid "Separate licenses with commas"
+msgstr "Licences séparées avec des virgules"
+
+#: inc/datasets.php:68
+msgid "Add or remove licenses"
+msgstr "Ajouter ou supprimer des licences"
+
+#: inc/datasets.php:69
+msgid "Choose from most used licenses"
+msgstr "Choisissez parmi des licences les plus utilisé"
+
+#: inc/datasets.php:70
+msgid "No licenses found"
+msgstr "Aucune licence trouvé"
+
+#: inc/datasets.php:85
+msgctxt "Source general name"
+msgid "Sources"
+msgstr "Sources"
+
+#: inc/datasets.php:86
+msgctxt "Source singular name"
+msgid "Source"
+msgstr "Source"
+
+#: inc/datasets.php:87
+msgid "All sources"
+msgstr "toutes les sources"
+
+#: inc/datasets.php:88
+msgid "Edit source"
+msgstr "Modifier la source"
+
+#: inc/datasets.php:89
+msgid "View source"
+msgstr "Voir la source"
+
+#: inc/datasets.php:90
+msgid "Update source"
+msgstr "Actualiser la source"
+
+#: inc/datasets.php:91
+msgid "Add new source"
+msgstr "Ajouter nouvelle source"
+
+#: inc/datasets.php:92
+msgid "New source name"
+msgstr "Nouveau nom de la source"
+
+#: inc/datasets.php:93
+msgid "Parent source"
+msgstr "source Parent"
+
+#: inc/datasets.php:94
+msgid "Parent source:"
+msgstr "source Parent"
+
+#: inc/datasets.php:95
+msgid "Search sources"
+msgstr "recherche la source "
+
+#: inc/datasets.php:96
+msgid "Popular sources"
+msgstr "sources populaires"
+
+#: inc/datasets.php:97
+msgid "Separate sources with commas"
+msgstr "séparées sources par des virgules"
+
+#: inc/datasets.php:98
+msgid "Add or remove sources"
+msgstr "Ajouter ou supprimer des sources"
+
+#: inc/datasets.php:99
+msgid "Choose from most used sources"
+msgstr "Choisissez parmi des sources les plus utilisé"
+
+#: inc/datasets.php:100
+msgid "No sources found"
+msgstr "Aucune source trouvés"
+
+#: inc/geocode-box.php:17 inc/submit-story.php:13
+msgid "Close"
+msgstr "Fermer"
+
+#: inc/geocode-box.php:19
+msgid "Finish geocoding"
+msgstr "Terminer géocodage"
+
+#: inc/submit-story.php:14 index.php:63 section-actions.php:5
+#: section-submit-call.php:6
+msgid "Submit a story"
+msgstr "Soumettre un article"
+
+#: inc/submit-story.php:15
+msgid ""
+"Do you have news to share from Congo? Contribute to this map by submitting "
+"your story. Help broaden the understanding of the global impact of this "
+"important region in the world."
+msgstr ""
+"Avez-vous des nouvelles à partager avec InfoCongo? Contribuer à cette carte "
+"en soumettant vos articles. Aider le monde d’entier a mieux comprendre "
+"l'impact de cette région importante en matière de l’environnement."
+
+#: inc/submit-story.php:20
+msgid "Submit a url"
+msgstr "soumettre une url"
+
+#: inc/submit-story.php:21
+msgid "Submit full story"
+msgstr "Soumettre l'article complet"
+
+#: inc/submit-story.php:27 inc/submit-story.php:85
+msgid "Your full name"
+msgstr "Votre nom complet"
+
+#: inc/submit-story.php:31 inc/submit-story.php:89
+msgid "E-mail"
+msgstr "Email"
+
+#: inc/submit-story.php:35
+msgid "Reporter"
+msgstr "reporter"
+
+#: inc/submit-story.php:39
+msgid "Story title"
+msgstr "Titre de l'article"
+
+#: inc/submit-story.php:43
+msgid "Story text"
+msgstr "Texte de l'article"
+
+#: inc/submit-story.php:47 inc/submit-story.php:93
+msgid "Story url"
+msgstr "URL de l'article"
+
+#: inc/submit-story.php:51
+msgid "Lead picture"
+msgstr "image plomb"
+
+#: inc/submit-story.php:56 inc/submit-story.php:98
+msgid "Story location"
+msgstr "Emplacement de l'article"
+
+#: inc/submit-story.php:58 inc/submit-story.php:100
+msgid "Find location on map"
+msgstr "Trouver l'emplacement sur la carte"
+
+#: inc/submit-story.php:63 inc/submit-story.php:105
+msgid "Latitude:"
+msgstr "Latitude"
+
+#: inc/submit-story.php:64 inc/submit-story.php:106
+msgid "Longitude:"
+msgstr "longitude"
+
+#: inc/submit-story.php:73
+msgid "Publishing date"
+msgstr "Date de publication"
+
+#: inc/submit-story.php:77
+msgid "Notes to the infoamazonia editor"
+msgstr "Notes au rédacteur en chef d'InfoCongo"
+
+#: inc/submit-story.php:80 inc/submit-story.php:114
+msgid "Send story"
+msgstr "Envoyer l'article"
+
+#: inc/submit-story.php:135
+msgid "Missing information. Please fill all the required fields!"
+msgstr ""
+"Information manquante. S'il vous plaît remplir tous les champs obligatoires!"
+
+#: inc/submit-story.php:144
+msgid "Could not save submission"
+msgstr "Impossible d'enregistrer votre submission"
+
+#: index.php:63
+msgid "Take action on Congo issues"
+msgstr "Prenez des mesures sur la situation de Congo"
+
+#: index.php:95 loop.php:23
+msgid "Read more"
+msgstr "Lire plus"
+
+#: index.php:146
+msgid "See all stories about this topic"
+msgstr "Voir tous les articles sur ce sujet"
+
+#: index.php:202
+msgid "See all stories about this country"
+msgstr "Voir tous les articles sur ce pays"
+
+#: index.php:233
+msgid "Popular posts"
+msgstr "Sujets populaires"
+
+#: loop-dataset.php:21
+msgid "View this data"
+msgstr "Voir ces données"
+
+#: loop-dataset.php:26 single-map.php:37 taxonomy-country.php:29
+#: taxonomy-publisher.php:29 taxonomy-topic.php:29 taxonomy.php:24
+msgid "Download"
+msgstr "télécharger"
+
+#: loop-dataset.php:34 single-dataset.php:50
+msgid "Download from source"
+msgstr "Télécharger de la source"
+
+#: loop.php:24
+msgid "Share"
+msgstr "Partager"
+
+#: search.php:5
+msgid "Search results for:"
+msgstr "Chercher des résultats pour:"
+
+#: search.php:14
+msgid "Read More"
+msgstr "Lire plus"
+
+#: section-actions.php:6
+msgid ""
+"Do you have news to share ? Contribute to this map by submitting your story."
+msgstr ""
+"Avez-vous des nouvelles à partager? Contribuer à cette carte en soumettant "
+"votre article."
+
+#: section-actions.php:10
+msgid "Customize and share"
+msgstr "Personnaliser et partager"
+
+#: section-actions.php:11
+msgid ""
+"Create a custom map visualization with different news and spread the word."
+msgstr ""
+"Créez une carte personnalisée visualisation avec différentes nouvelles et "
+"passer le mot."
+
+#: section-actions.php:15
+msgid "Get the data"
+msgstr "Obtenir les données"
+
+#: section-actions.php:16
+msgid ""
+"Download all the researched data used to design our maps and help us remix "
+"it into new visualizations."
+msgstr ""
+"Télécharger toutes les données recherchées utilisées pour concevoir nos "
+"cartes et nous aider à le remixer dans de nouvelles visualisations."
+
+#: section-publisher-description.php:10
+msgid "Visit"
+msgstr "Visite"
+
+#: section-submit-call.php:4
+msgid ""
+"Do you have news to share? Contribute to this map by submitting your story. "
+"Help broaden the understanding of the global impact of this important region "
+"in the world."
+msgstr ""
+"Avez-vous des nouvelles à partager avec InfoCongo? Contribuer à cette carte "
+"en soumettant vos articles. Aider le monde d’entier a mieux comprendre "
+"l'impact de cette région importante en matière de l’environnement."
+
+#: single-blog-post.php:13
+msgid "by"
+msgstr "par"
+
+#: single-dataset.php:28
+msgid "Preview data"
+msgstr "prévisualiser les données"
+
+#: single-dataset.php:42
+msgid "Download this data"
+msgstr "Télécharger ces données"
+
+#: single-dataset.php:61
+msgid "License"
+msgstr "licence"
+
+#: single-dataset.php:63
+msgid "More data on this license"
+msgstr "Plus de données sur cette licence"
+
+#: single-dataset.php:74
+msgid "Source"
+msgstr "Source"
+
+#: single-dataset.php:76
+msgid "More data from this source"
+msgstr "Plus les données provenant de cette source"
+
+#: single-map.php:35 taxonomy-country.php:27 taxonomy-publisher.php:27
+#: taxonomy-topic.php:27 taxonomy.php:22
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: single-map.php:36 taxonomy-country.php:28 taxonomy-publisher.php:28
+#: taxonomy-topic.php:28 taxonomy.php:23
+msgid "Get GeoJSON"
+msgstr "Obtenez GeoJSON"
+
+#: single-map.php:66
+msgid "Embed this map"
+msgstr "Intégrer cette carte"
