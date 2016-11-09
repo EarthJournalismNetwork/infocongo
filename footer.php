@@ -7,62 +7,48 @@
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png" alt="">
 			<div class="row">
 				<div class="one-half column">
-					<p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+					<p class="footer-description">InfoCongo is a news platform using data and interactive maps to capture ongoing positive and negative changes in the Congo Basin.</p>
 				</div>
 				<div class="one-half column">
 					<?php wp_nav_menu( array( 'theme_location' => 'footer_menu' ) ); ?>
 				</div>
 			</div>
 		</div>
-		<div class="three columns block">
-			<h4><?php _e( 'Topics' ) ?></h4>
-			<?php 
-			    $args = array(
-				'show_option_all'    => '',
-				'orderby'            => 'name',
-				'order'              => 'ASC',
-				'style'              => 'list',
-				'hide_empty'         => 1,
-				'use_desc_for_title' => 1,
-				'title_li'           => __( '' ),
-				'number'             => null,
-				'echo'               => 1,
-				'depth'              => 0,
-				'current_category'   => 1,
-				'pad_counts'         => 0,
-				'taxonomy'           => 'topic',
-				'walker'             => null
-			    );
-			    wp_list_categories( $args ); 
-			?>
-		</div>
-		<div class="three columns block">
-			<h4><?php _e( 'Countries' ) ?></h4>
-			<?php 
-			    $args = array(
-				'show_option_all'    => '',
-				'orderby'            => 'name',
-				'order'              => 'ASC',
-				'style'              => 'list',
-				'hide_empty'         => 1,
-				'use_desc_for_title' => 1,
-				'title_li'           => __( '' ),
-				'number'             => null,
-				'echo'               => 1,
-				'depth'              => 0,
-				'current_category'   => 1,
-				'pad_counts'         => 0,
-				'taxonomy'           => 'country',
-				'walker'             => null
-			    );
-			    wp_list_categories( $args ); 
-			?>
+		<div class="six columns supports">
+			<div class="twelve columns">
+				<div class="row">
+					<h4><?php _e( 'A project by' ) ?></h4>
+					<a href="http://internews.org" class="logos internews"></a>
+					<a href="http://earthjournalism.net/" class="logos earth"></a>	
+				</div>
+				<div class="row">
+					<h4><?php _e( 'Supported by' ) ?></h4>
+					<a href="http://carpe.umd.edu/" class="logos carpe"></a>	
+					<a href="https://www.usaid.gov/" class="logos usaid"></a>	
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="site-info">
 		<div class="container">
 			<div class="one-half columns">
-				<p class="colophon">site by<span></span><span class="cardume-logo"></span>code by<span class="oniricca-logo"></span></p>
+				<p class="colophon">
+					site by 
+					<span>
+						<a href="http://cardume.art.br">cardume </a>
+					</span>
+					<span class="cardume-logo"></span>
+					 - development by 
+					 <span>
+						 <a href="http://jeowp.org">JEO Beta</a>
+					 </span>
+					 <span class="jeo-logo"></span>
+					  <span> & </span> 
+					 <span>
+						 <a href="http://oniric.ca">oniricca</a>
+					 </span>
+					 <span class="oniricca-logo"></span>
+				 </p>
 			</div>
 			<div class="one-half columns">
 				<p class="footer-social-icons"></p>

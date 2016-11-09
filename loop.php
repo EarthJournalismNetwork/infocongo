@@ -1,34 +1,23 @@
 <ul class="list-posts row">
 	<?php while(have_posts()) : the_post(); ?>
 		<li id="post-<?php the_ID(); ?>" <?php post_class('post-item four columns'); ?>>
-			<article>
+			<article class="loop-item">
 				<header class="post-header">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"></a>
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<p class="meta clearfix">
-						<span class="date">
-							<span class="lsf">&#xE15e;</span>
-							<span class="date-content"><?php echo get_the_date(_x('m/d/Y', 'reduced date format', 'infoamazonia')); ?></span>
-						</span>
+					<div class="loop-list-thumb">
 						<?php
-						if(get_the_terms($post->ID, 'publisher')) :
-							?>
-							<span class="publisher">
-								<span class="lsf">clip</span>
-								<span class="publisher-content">
-									<?php
-									echo get_the_terms($post->ID, 'topic');
-									?>
-								</span>
-							</span>
-							<?php
-						endif;
+						if(has_post_thumbnail()) {
+							echo '<a href="' . get_permalink() .'" title="' . get_the_title() . '">' . get_the_post_thumbnail($post->ID, 'loop-list') . '</a>';
+						} else {
+							echo ' <div class="nothumb loop-list"></div>';
+						}
 						?>
-					</p>
+					</div>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"></a>
+					<h2 class="loop-post-title"><a href="<?php the_permalink(); ?>"><?php echo title(10); ?></a></h2>
 				</header>
-				<section class="post-content">
-					<?php the_excerpt(); ?>
-				</section>
+				<div class="post-content">
+					<?php echo excerpt(20); ?>
+				</div>
 				<footer class="post-actions">
 					<div class="buttons">
 						<a class="button" href="<?php the_permalink(); ?>"><?php _e('Read more', 'infoamazonia'); ?></a>

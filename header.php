@@ -17,46 +17,74 @@
 		echo ' | ' . __('Page', 'infoamazonia') . max($paged, $page);
 
 	?></title>
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/css/icons.css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.ico" type="image/x-icon" />
 <?php wp_head(); ?>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/sss.min.js"></script>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/sss.css" type="text/css" media="all">
 <script>
-$(document).ready( function(){
-		var $et_top_menu = $( 'ul.nav' ),
-			$search_icon = $( '.search-icon' );
+	jQuery(function($) {
+	$('.slider').sss();
+	});
+</script>
+<script>
+jQuery(document).ready(function($) {
 
-		$search_icon.click( function() {
-			var $this_el = $(this),
-				$form = $this_el.siblings( '.search-form' );
+	var $et_top_menu = $( '#top-search' ),
+		$search_icon = $( '.icon_search' );
 
-			if ( $form.hasClass( 'hidden' ) ) {
-				$form.css( { 'display' : 'block', 'opacity' : 0 } ).animate( { opacity : 1 }, 500 );
-			} else {
-				$form.animate( { opacity : 0 }, 500 );
-			}
+	$search_icon.click( function() {
+		var $this_el = $(this),
+			$form = $this_el.siblings( '.search-form' );
 
-			$form.toggleClass( 'hidden' );
-		} );
-	})
-	</script>
+		if ( $form.hasClass( 'hidden' ) ) {
+			$form.css( { 'display' : 'block', 'opacity' : 0 } ).animate( { opacity : 1 }, 500 );
+		} else {
+			$form.animate( { opacity : 0 }, 500 );
+		}
+
+		$form.toggleClass( 'hidden' );
+	});
+});
+</script>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/responsive.css" type="text/css" media="all">
+<script>
+	$(document).ready(function(){
+		$("#main-header .menu_responsive .btn_responsive").click(function() {
+		    $("#main-nav").slideToggle();
+		});		
+	});
+</script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="site-wrapper">
 		<header id="main-header">
 			<div class="container">
 				<div class="row">
-					<div class="four columns">
+					<div class="three columns">
 						<span class="site-logo">
 							<a href="<?php echo home_url('/' . $lang); ?>" title="<?php echo bloginfo('name'); ?>">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-mini.png" class="logo" />
+							<?php if(is_home()) { ?>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-mini.png" class="logo-mini" />
+							<?php } else { ?>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-full.png" class="logo-full" />
+							<?php } ?>
 							</a>
 						</span>
 					</div>
-					<div class="eight columns">
-						<section id="main-nav">
+					<div class="menu_responsive">
+						<a href="javascript:void(0);" class="btn_responsive"><span class="icon_menu-square_alt2"></span></a>
+					</div>
+					<div class="nine columns">
+						
+						<div class="tools u-pull-right">
 							<div id="top-search">
 								<span class="icon_search"></span>
 								<form role="search" method="get" class="search-form hidden" action="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -69,11 +97,28 @@ $(document).ready( function(){
 								?>
 								</form>
 							</div>
+							<div class="social-icons">
+								<a href="http://facebook.com/InfoCongo.org">
+									<span class="social_facebook_square"></span>
+								</a>
+								<a href="http://twitter.com/Info_Congo">
+									<span class="social_twitter_square"></span>
+								</a>
+							</div>
+							<div class="languages">
+								<span><a href="?lang=en">en</a></span>
+								<span>|</span>
+								<span><a href="?lang=fr">fr</a></span>
+							</div>	
+						</div>
+
+						<div id="main-nav">
 							<nav>
 								<?php wp_nav_menu( array( 'theme_location' => 'header_menu' ) ); ?>
 							</nav>
-						</section>
+						</div>
 					</div>
+					
 				</div>
 			</div>
 		</header>

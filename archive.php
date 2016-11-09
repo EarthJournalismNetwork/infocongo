@@ -11,7 +11,7 @@
 								<h1><?php _e('Maps', 'infocongo'); ?></h1>
 						</header>
 							</div>
-						<?php get_template_part('loop', 'maps'); ?>
+						<?php get_template_part('loop'); ?>
 					</section>
 
 				<?php endif; ?>

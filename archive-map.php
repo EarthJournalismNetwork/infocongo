@@ -7,9 +7,9 @@
 
 					<section id="maps" class="map-loop-section archive-list">
 							<div class="twelve columns">
-						<header class="page-header">
-								<h1><?php _e('Maps', 'infocongo'); ?></h1>
-						</header>
+								<header class="page-header">
+										<h1 class="page-title"><?php _e('Maps', 'infocongo'); ?></h1>
+								</header>
 							</div>
 						<?php get_template_part('loop', 'maps'); ?>
 					</section>
