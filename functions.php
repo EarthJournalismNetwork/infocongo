@@ -460,13 +460,16 @@ function map_options_box( $post ){
 
     if($post) {
         $show_map = get_post_meta($post->ID, 'show_map', true);
-        $check = ( isset( $show_map ) && $show_map ) ? 'on' : 'off';
+        $selected = isset( $show_map ) ? esc_attr( $show_map ) : '';
     }
 
     ?>
     <p>
-        <input type="checkbox" id="show_map" name="show_map" <?php checked( $check, 'on' ); ?> />
         <label for="show_map"> <?php _e('Show Map', 'jeo'); ?></label>
+        <select name="show_map" id="show_map">
+			<option value="yes" <?php selected( $selected, 'yes' ); ?>>yes</option>
+			<option value="no" <?php selected( $selected, 'no' ); ?>>no</option>
+		</select>
     </p>
     <?php
 }
@@ -479,9 +482,13 @@ function map_options_save($post_id) {
     if (false !== wp_is_post_revision($post_id))
         return;
 
+//    if(isset($_REQUEST['show_map'])){
+//        update_post_meta($post_id, 'show_map', $_REQUEST['show_map']);
+//    }else{
+//         delete_post_meta($post_id, 'show_map');
+//    }
+    
     if(isset($_REQUEST['show_map'])){
         update_post_meta($post_id, 'show_map', $_REQUEST['show_map']);
-    }else{
-         delete_post_meta($post_id, 'show_map');
     }
 }

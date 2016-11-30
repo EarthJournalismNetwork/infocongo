@@ -37,7 +37,10 @@
                             // Get the variable show_map.
                             $show_map = get_post_meta($post->ID, 'show_map', true);
                         
-                            if($show_map == 'on'){
+                            // $show_map value yes, "" or no.
+                            // When is yes o "" show the map.
+                            // When is no not show the map.
+                            if($show_map != 'no'){
                         ?>
 						<div style="width:100%;height:500px; margin-bottom:40px;">
 							<?php
