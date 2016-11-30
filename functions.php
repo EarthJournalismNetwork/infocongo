@@ -481,12 +481,6 @@ function map_options_save($post_id) {
 
     if (false !== wp_is_post_revision($post_id))
         return;
-
-//    if(isset($_REQUEST['show_map'])){
-//        update_post_meta($post_id, 'show_map', $_REQUEST['show_map']);
-//    }else{
-//         delete_post_meta($post_id, 'show_map');
-//    }
     
     if(isset($_REQUEST['show_map'])){
         update_post_meta($post_id, 'show_map', $_REQUEST['show_map']);
