@@ -442,3 +442,46 @@ function ic_author_function($atts, $content = null) {
    return $return_string;
 }
 add_shortcode('author', 'ic_author_function');
+// Meta Box Map Options.
+add_action('add_meta_boxes', 'map_options_add_meta_box');
+function map_options_add_meta_box() {
+    add_meta_box(
+        'map-options',
+        __('Map options', 'jeo'),
+         'map_options_box',
+        'post',
+        'advanced',
+		'high'
+    );
+}
+    
+function map_options_box( $post ){
+    $show_map = '';
+
+    if($post) {
+        $show_map = get_post_meta($post->ID, 'show_map', true);
+        $check = ( isset( $show_map ) && $show_map ) ? 'on' : 'off';
+    }
+
+    ?>
+    <p>
+        <input type="checkbox" id="show_map" name="show_map" <?php checked( $check, 'on' ); ?> />
+        <label for="show_map"> <?php _e('Show Map', 'jeo'); ?></label>
+    </p>
+    <?php
+}
+
+add_action('save_post', 'map_options_save');
+function map_options_save($post_id) {
+    if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+        return;
+
+    if (false !== wp_is_post_revision($post_id))
+        return;
+
+    if(isset($_REQUEST['show_map'])){
+        update_post_meta($post_id, 'show_map', $_REQUEST['show_map']);
+    }else{
+         delete_post_meta($post_id, 'show_map');
+    }
+}

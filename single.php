@@ -32,12 +32,23 @@
 				</div>
 				<div class="row ">
 					<div class="post-content ten offset-by-one columns">
+                        <!-- Show map depending on a variable -->
+                        <?php
+                            // Get the variable show_map.
+                            $show_map = get_post_meta($post->ID, 'show_map', true);
+                        
+                            if($show_map == 'on'){
+                        ?>
 						<div style="width:100%;height:500px; margin-bottom:40px;">
 							<?php
 							global $jeo;
 							$jeo->get_map(false, false, true); 
 							?>
 						</div>
+                        <?php 
+                            }
+                        ?>
+                        <!-- End of map display depending on a variable -->
 						<?php the_content(); ?>
 						<?php $value = get_field( "article_url" );
 							if( $value ) {   
