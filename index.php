@@ -2,7 +2,7 @@
 <script>
 	$.noConflict();
 	jQuery( document ).ready(function( $ ) {
-	
+
 		var $topic_list = $('#topic-list li');
 		var $topic_content = $('.topic-content');
 		var $topic_ref;
@@ -45,7 +45,7 @@
 	//})(jQuery);
 		$("#main-header .menu_responsive .btn_responsive").click(function() {
 		    $("#main-nav").slideToggle();
-		});	
+		});
     });
 </script>
 
@@ -123,18 +123,18 @@
 					 ?>
 				</ul>
 			</div>
-			
+
 			<?php
 			$terms = get_terms('topic');
 			foreach($terms as $term) :
 				$term_query = new WP_Query(array('topic' => $term->slug, 'posts_per_page' => 4));
-				if($term_query->have_posts()) : 
+				if($term_query->have_posts()) :
 					?>
 					<div id="<?php echo $term->slug; ?>" class="topic-content">
 						<ul>
 							<?php while($term_query->have_posts()) : $term_query->the_post(); ?>
 								<li id="<?php echo $term->slug; ?>-<?php the_ID(); ?>" class="home-post-list">
-									<?php if(has_post_thumbnail()) {                    
+									<?php if(has_post_thumbnail()) {
 									    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(), 'home-list' );
 									     echo '<img src="' . $image_src[0]  . '" width="100%"  />';
 									} else {
@@ -145,11 +145,11 @@
 										<span class="icon_pin_alt"></span>
 										<span><?php echo get_the_term_list( $post->ID, 'country', ' ', ', ' ); ?></span>
 									</div>
-								</li>					
+								</li>
 							<?php endwhile; ?>
 						</ul>
 						<div class="all-stories">
-							<a href="<?php echo get_term_link($term); ?>" class="button"> 
+							<a href="<?php echo get_term_link($term); ?>" class="button">
 								<?php _e('See all stories about this topic', 'infocongo'); ?>
 							</a>
 						</div>
@@ -158,7 +158,7 @@
 				endif;
 			endforeach;
 			?>
-			
+
 		</div>
 	</div>
 <?php wp_reset_postdata(); ?>
@@ -179,18 +179,18 @@
 					 ?>
 				</ul>
 			</div>
-			
+
 			<?php
 			$terms = get_terms( 'country' );
 			foreach($terms as $term) :
 				$term_query = new WP_Query(array('country' => $term->slug, 'posts_per_page' => 4));
-				if($term_query->have_posts()) : 
+				if($term_query->have_posts()) :
 					?>
 					<div id="<?php echo $term->slug; ?>" class="country-content">
 						<ul>
 							<?php while($term_query->have_posts()) : $term_query->the_post(); ?>
 								<li id="<?php echo $term->slug; ?>-<?php the_ID(); ?>" class="home-post-list">
-									<?php if(has_post_thumbnail()) {                    
+									<?php if(has_post_thumbnail()) {
 									    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(), 'home-list' );
 									     echo '<img src="' . $image_src[0]  . '" width="100%"  />';
 									} else {
@@ -201,11 +201,11 @@
 										<span class="icon_pin_alt"></span>
 										<span><?php echo get_the_term_list( $post->ID, 'country', ' ', ', ' ); ?></span>
 									</div>
-								</li>					
+								</li>
 							<?php endwhile; ?>
 						</ul>
 						<div class="all-stories">
-							<a href="<?php echo get_term_link($term); ?>" class="button"> 
+							<a href="<?php echo get_term_link($term); ?>" class="button">
 								<?php _e('See all stories about this country', 'infocongo'); ?>
 							</a>
 						</div>
@@ -214,7 +214,7 @@
 				endif;
 			endforeach;
 			?>
-			
+
 		</div>
 	</div>
 <?php wp_reset_postdata(); ?>
@@ -224,7 +224,7 @@
 		'cat'	=> 87,
 	    'order' => 'ASC'
 	);
-	$fourth_query = new WP_Query($args); 
+	$fourth_query = new WP_Query($args);
 ?>
 
 <!-- Popular -->
@@ -238,7 +238,7 @@
 				<?php while( $fourth_query->have_posts() ) : $fourth_query->the_post(); ?>
 					<div id="home-slider">
 							<div class="popular-thumb">
-							<?php if(has_post_thumbnail()) {                    
+							<?php if(has_post_thumbnail()) {
 							    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(), 'home-slider' );
 							     echo '<img src="' . $image_src[0]  . '" width="100%"  />';
 							} else {
@@ -265,6 +265,63 @@
 </div>
 <?php wp_reset_postdata(); ?>
 
+<!-- Maps -->
+<div class="list-content">
+	<div class="container">
+		<div class="three columns">
+			<h2><?php _e('Maps' , 'infocongo' ); ?></h2>
+		</div>
 
+		<?php
+			$query = new WP_Query(
+				array(
+	    		    'post_type' => 'map',
+					'meta_query' => array(
+						array(
+							'key' => 'show_map_index',
+							'value' => 'yes'
+						)
+					)
+				)
+			);
+		?>
+		<div id="map-archive" class="gray-page archive-page">
+			<div class="container">
+				<?php if($query->have_posts()) :?>
+					<section id="maps" class="map-loop-section archive-list">
+						<ul class="list-maps clearfix">
+							<?php while($query->have_posts()) : $query->the_post(); ?>
+								<li id="post-<?php the_ID(); ?>" <?php post_class('post-item'); ?>>
+									<article class="clearfix">
+										<div class="map-list-thumb">
+											<?php if(has_post_thumbnail()) {
+												echo '<a href="' . get_permalink() .'" title="' . get_the_title() . '">' . get_the_post_thumbnail($post->ID, 'archive-list') . '</a>';
+											} else {
+												echo '<div class="nothumb map-list"></div>';
+											}
+											?>
+										</div>
+										<div class="map-list-info">
+											<header class="post-header">
+												<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+											</header>
+											<section>
+												<?php echo excerpt(35); ?>
+											</section>
+										</div>
+									</article>
+								</li>
+							<?php endwhile; ?>
+						</ul>
+						<div class="twelve columns">
+							<?php //if(function_exists('wp_paginate')) wp_paginate(); ?>
+						</div>
+					</section>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>

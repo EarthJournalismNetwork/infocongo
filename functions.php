@@ -26,8 +26,8 @@ include(STYLESHEETPATH . '/inc/submit-story.php');
 include(STYLESHEETPATH . '/inc/geocode-box.php');
 
  // Shares
-//include(STYLESHEETPATH . '/inc/shares.php');    
-  
+//include(STYLESHEETPATH . '/inc/shares.php');
+
 // Update shares on post view
 /*function publica_update_shares() {
   if(is_single()) {
@@ -46,7 +46,7 @@ function infocongo_scripts() {
 	// deregister jeo styles
 	wp_deregister_style('jeo-main');
 
-  // deregister jeo site frontend infocongo_scripts 
+  // deregister jeo site frontend infocongo_scripts
   //wp_deregister_script('jeo-site');
 
   // Chosen
@@ -168,7 +168,7 @@ function register_taxonomies() {
     'search_items'               => __( 'Search Topics', 'infocongo' ),
     'not_found'                  => __( 'Not Found', 'infocongo' ),
   );
-  $args = array( 
+  $args = array(
     'labels'                     => $labels,
     'public'                     => true,
     'show_in_nav_menus'          => true,
@@ -201,7 +201,7 @@ function register_taxonomies() {
     'search_items'               => __( 'Search Countries', 'infocongo' ),
     'not_found'                  => __( 'Not Found', 'infocongo' ),
   );
-  $args = array( 
+  $args = array(
     'labels'                     => $labels,
     'public'                     => true,
     'show_in_nav_menus'          => true,
@@ -216,7 +216,7 @@ function register_taxonomies() {
   register_taxonomy( 'country', array( 'post' ), $args );
 
 
-  $labels = array( 
+  $labels = array(
     'name'                       => __('Publishers', 'Taxonomy General Name', 'infocongo'),
     'singular_name'              => __('Publisher', 'Taxonomy Singular Name', 'infocongo'),
     'search_items'               => __('Search publishers', 'infocongo'),
@@ -234,7 +234,7 @@ function register_taxonomies() {
     'menu_name'                  => __('Publishers', 'infocongo')
   );
 
-  $args = array( 
+  $args = array(
     'labels'                     => $labels,
     'public'                     => true,
     'show_in_nav_menus'          => true,
@@ -249,7 +249,7 @@ function register_taxonomies() {
 
   register_taxonomy('publisher', array('post'), $args);
 
-    
+
 
 }
 add_action( 'jeo_init', 'register_taxonomies' );
@@ -288,7 +288,7 @@ function custom_post_type() {
     'show_in_admin_bar'   => true,
     'show_in_nav_menus'   => true,
     'can_export'          => true,
-    'has_archive'         => true,    
+    'has_archive'         => true,
     'exclude_from_search' => true,
     'publicly_queryable'  => true,
     'capability_type'     => 'page',
@@ -326,7 +326,7 @@ function custom_post_type() {
     'show_in_admin_bar'   => true,
     'show_in_nav_menus'   => true,
     'can_export'          => true,
-    'has_archive'         => true,    
+    'has_archive'         => true,
     'exclude_from_search' => true,
     'publicly_queryable'  => true,
     'capability_type'     => 'page',
@@ -356,7 +356,7 @@ function excerpt($limit) {
     $excerpt = implode(" ",$excerpt).'...';
   } else {
     $excerpt = implode(" ",$excerpt);
-  } 
+  }
   $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
   return $excerpt;
 }
@@ -369,9 +369,9 @@ function content($limit) {
     $content = implode(" ",$content).'...';
   } else {
     $content = implode(" ",$content);
-  } 
+  }
   $content = preg_replace('/\[.+\]/','', $content);
-  $content = apply_filters('the_content', $content); 
+  $content = apply_filters('the_content', $content);
   $content = str_replace(']]>', ']]&gt;', $content);
   return $content;
 }
@@ -384,9 +384,9 @@ function title($limit) {
     $title = implode(" ",$title).'...';
   } else {
     $title = implode(" ",$title);
-  } 
+  }
   $title = preg_replace('/\[.+\]/','', $title);
-  $title = apply_filters('the_title', $title); 
+  $title = apply_filters('the_title', $title);
   $title = str_replace(']]>', ']]&gt;', $title);
   return $title;
 }
@@ -442,7 +442,8 @@ function ic_author_function($atts, $content = null) {
    return $return_string;
 }
 add_shortcode('author', 'ic_author_function');
-// Meta Box Map Options.
+
+// Meta Box Map Options  in Post.
 add_action('add_meta_boxes', 'map_options_add_meta_box');
 function map_options_add_meta_box() {
     add_meta_box(
@@ -454,7 +455,7 @@ function map_options_add_meta_box() {
 		'high'
     );
 }
-    
+
 function map_options_box( $post ){
     $show_map = '';
 
@@ -481,8 +482,54 @@ function map_options_save($post_id) {
 
     if (false !== wp_is_post_revision($post_id))
         return;
-    
+
     if(isset($_REQUEST['show_map'])){
         update_post_meta($post_id, 'show_map', $_REQUEST['show_map']);
+    }
+}
+
+
+// Meta Box Map Options in Maps.
+add_action('add_meta_boxes', 'map_index_options_add_meta_box');
+function map_index_options_add_meta_box() {
+    add_meta_box(
+        'map-options',
+        __('Map options', 'jeo'),
+         'map_index_options_box',
+        'map',
+        'advanced',
+		'high'
+    );
+}
+
+function map_index_options_box( $post ){
+    $show_map_index = '';
+
+    if($post) {
+        $show_map_index = get_post_meta($post->ID, 'show_map_index', true);
+        $selected = isset( $show_map_index ) ? esc_attr( $show_map_index ) : '';
+    }
+
+    ?>
+    <p>
+        <label for="show_map_index"> <?php _e('Show Map Home', 'jeo'); ?></label>
+        <select name="show_map_index" id="show_map_index">
+			<option value="no" <?php selected( $selected, 'no' ); ?>>no</option>
+            <option value="yes" <?php selected( $selected, 'yes' ); ?>>yes</option>
+		</select>
+    </p>
+    <?php
+}
+
+add_action('save_post', 'map_index_options_save');
+function map_index_options_save($post_id) {
+    if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
+        return;
+
+    if (false !== wp_is_post_revision($post_id))
+        return;
+
+    if(isset($_REQUEST['show_map_index'])){
+        update_post_meta($post_id, 'show_map_index', $_REQUEST['show_map_index']);
     }
 }
