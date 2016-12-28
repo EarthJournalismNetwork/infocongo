@@ -1553,10 +1553,12 @@ button {
   position: relative;
   top: 2px;
 }
+/*
+josego comento esta parte porque no estaba funcionando el mapa.
 .gray-page {
   width: 78%;
   float: left;
-}
+}*/
 .gray-page .map-list-thumb {
   width: 100% !important;
 }
