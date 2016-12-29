@@ -42,10 +42,14 @@
 		});
 
 		$country_list.filter(':first-child').click();
-	//})(jQuery);
+
 		$("#main-header .menu_responsive .btn_responsive").click(function() {
 		    $("#main-nav").slideToggle();
 		});
+	//})(jQuery);
+		// $("#main-header .menu_responsive .btn_responsive").click(function() {
+		//     $("#main-nav").slideToggle();
+		// });
     });
 </script>
 
@@ -288,7 +292,7 @@
 		<!-- <div id="map-archive" class="gray-page archive-page"> -->
 		<div id="map-archive" class="map-spotlight">
 		<!-- <div id="map-archive" class="topic-content active"> -->
-			<!-- <div class="container"> -->
+			<div class="container">
 				<?php if($query->have_posts()) :?>
 					<section id="maps" class="map-loop-section archive-list">
 						<ul class="list-maps clearfix">

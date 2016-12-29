@@ -56,10 +56,15 @@ jQuery(document).ready(function($) {
 </script>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/responsive.css" type="text/css" media="all">
 <script>
-	$(document).ready(function(){
+	// $(document).ready(function(){
+	// 	$("#main-header .menu_responsive .btn_responsive").click(function() {
+	// 	    $("#main-nav").slideToggle();
+	// 	});
+	// });
+	jQuery(document).ready(function($) {
 		$("#main-header .menu_responsive .btn_responsive").click(function() {
 		    $("#main-nav").slideToggle();
-		});		
+		});
 	});
 </script>
 </head>
@@ -83,7 +88,7 @@ jQuery(document).ready(function($) {
 						<a href="javascript:void(0);" class="btn_responsive"><span class="icon_menu-square_alt2"></span></a>
 					</div>
 					<div class="nine columns">
-						
+
 						<div class="tools u-pull-right">
 							<div id="top-search">
 								<span class="icon_search"></span>
@@ -109,7 +114,7 @@ jQuery(document).ready(function($) {
 								<span><a href="?lang=en">en</a></span>
 								<span>|</span>
 								<span><a href="?lang=fr">fr</a></span>
-							</div>	
+							</div>
 						</div>
 
 						<div id="main-nav">
@@ -118,7 +123,7 @@ jQuery(document).ready(function($) {
 							</nav>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</header>
