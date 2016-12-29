@@ -1553,16 +1553,36 @@ button {
   position: relative;
   top: 2px;
 }
+
 /*
 josego comento esta parte porque no estaba funcionando el mapa.
 .gray-page {
   width: 78%;
   float: left;
 }*/
+
 .gray-page .map-list-thumb {
   width: 100% !important;
 }
 .gray-page .map-list-info {
   width: 78%;
   margin: 2% 0;
+}
+
+.map-spotlight{
+  width: 78%;
+  float: left;
+}
+.map-spotlight .map-spotlight-list-thumb {
+  width: 100% !important;
+}
+.map-spotlight .map-spotlight-list-info {
+  width: 78%;
+  margin: 2% 0;
+}
+
+.map-spotlight .list-maps .map-list-info {
+  width: 44%;
+  margin: 2% 4%;
+  float: none;
 }

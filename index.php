@@ -285,8 +285,10 @@
 				)
 			);
 		?>
-		<div id="map-archive" class="gray-page archive-page">
-			<div class="container">
+		<!-- <div id="map-archive" class="gray-page archive-page"> -->
+		<div id="map-archive" class="map-spotlight">
+		<!-- <div id="map-archive" class="topic-content active"> -->
+			<!-- <div class="container"> -->
 				<?php if($query->have_posts()) :?>
 					<section id="maps" class="map-loop-section archive-list">
 						<ul class="list-maps clearfix">
@@ -318,7 +320,7 @@
 						</div>
 					</section>
 				<?php endif; ?>
-			</div>
+			<!-- </div> -->
 		</div>
 	</div>
 </div>
