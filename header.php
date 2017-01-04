@@ -63,7 +63,8 @@ jQuery(document).ready(function($) {
 	// });
 	jQuery(document).ready(function($) {
 		$("#main-header .menu_responsive .btn_responsive").click(function() {
-		    $("#main-nav").slideToggle();
+			// Hide why slideToggle in responsive. Cannot work.	
+			//$("#main-nav").slideToggle();
 		});
 	});
 </script>
