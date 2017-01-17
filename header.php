@@ -56,17 +56,17 @@ jQuery(document).ready(function($) {
 </script>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/responsive.css" type="text/css" media="all">
 <script>
-	// $(document).ready(function(){
-	// 	$("#main-header .menu_responsive .btn_responsive").click(function() {
-	// 	    $("#main-nav").slideToggle();
-	// 	});
-	// });
-	jQuery(document).ready(function($) {
+	$(document).ready(function(){
 		$("#main-header .menu_responsive .btn_responsive").click(function() {
-			// Hide why slideToggle in responsive. Cannot work.	
-			//$("#main-nav").slideToggle();
+		    $("#main-nav").slideToggle();
 		});
 	});
+	// jQuery(document).ready(function($) {
+	// 	$("#main-header .menu_responsive .btn_responsive").click(function() {
+	// 		// Hide why slideToggle in responsive. Cannot work.	
+	// 		//$("#main-nav").slideToggle();
+	// 	});
+	// });
 </script>
 </head>
 <body <?php body_class(); ?>>

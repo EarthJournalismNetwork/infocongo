@@ -461,6 +461,10 @@ button {
   padding-top: 10px;
   border-top: 1px solid #b6c877;
 }
+#site-footer .block img {
+  width: 100%;
+  max-width: 300px;
+}
 #site-footer .main-footer {
   padding-bottom: 40px;
 }
@@ -1220,14 +1224,21 @@ button {
 }
 .list-maps .post-item:nth-child(odd) {
   margin-right: 2%;
+  clear: both;
 }
 .list-maps .map-list-thumb {
   float: left;
-  width: 48%;
+  width: 44%;
+  padding: 10px 2%;
+}
+.list-maps .map-list-thumb img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
 }
 .list-maps .map-list-info {
   width: 44%;
-  margin: 2% 4%;
+  margin: 10px 4%;
   float: left;
 }
 .list-maps .map-list-info h2 a {
@@ -1553,23 +1564,15 @@ button {
   position: relative;
   top: 2px;
 }
-
-/*
-josego comento esta parte porque no estaba funcionando el mapa.
-.gray-page {
-  width: 78%;
-  float: left;
+/*#map-archive.gray-page{
+	background: #666;
 }*/
-
-.gray-page .map-list-thumb {
+#widget-content {
   width: 100% !important;
+  max-width: 960px;
 }
-.gray-page .map-list-info {
-  width: 78%;
-  margin: 2% 0;
-}
-
-.map-spotlight{
+/*JOSE*/
+/*.map-spotlight{
   width: 78%;
   float: left;
 }
@@ -1585,4 +1588,4 @@ josego comento esta parte porque no estaba funcionando el mapa.
   width: 44%;
   margin: 2% 4%;
   float: none;
-}
+}*/
