@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Infocongo\n"
-"POT-Creation-Date: 2015-09-22 23:18-0300\n"
+"POT-Creation-Date: 2017-02-11 11:13-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:1,2;_ex:1,2n\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -39,9 +39,14 @@ msgstr "Source"
 msgid "Licenses"
 msgstr "Licences"
 
-#: archive-map.php:11 archive.php:11
+#: archive-map.php:11 archive.php:11 index.php:276
 msgid "Maps"
 msgstr "Cartes"
+
+#: archive-publishers.php:9
+#, fuzzy
+msgid "Our Publishers"
+msgstr "Directeurs de publication"
 
 #: content-embed.php:16 header.php:17
 msgid "Page"
@@ -63,261 +68,298 @@ msgstr "Un projet de"
 msgid "Supported by"
 msgstr "Soutenu par"
 
-#: functions.php:146
+#: functions.php:153
 msgctxt "Taxonomy General Name"
 msgid "Topics"
 msgstr "Sujets"
 
-#: functions.php:147
+#: functions.php:154
 msgctxt "Taxonomy Singular Name"
 msgid "Topic"
 msgstr "Sujet"
 
-#: functions.php:148 index.php:107
+#: functions.php:155 index.php:118
 msgid "Topics"
 msgstr "Sujets"
 
-#: functions.php:149
+#: functions.php:156
 msgid "All Topics"
 msgstr "Tous les sujets"
 
-#: functions.php:150
+#: functions.php:157
 msgid "Parent Topics"
 msgstr "Thèmes parents"
 
-#: functions.php:151
+#: functions.php:158
 msgid "Parent Topic:"
 msgstr "Thème parents"
 
-#: functions.php:152
+#: functions.php:159
 msgid "New Topic Name"
 msgstr "Nom du nouveau sujet"
 
-#: functions.php:153
+#: functions.php:160
 msgid "Add New Topic"
 msgstr "Ajouter un nouveau sujet"
 
-#: functions.php:154
+#: functions.php:161
 msgid "Edit Topic"
 msgstr "Modifier le sujet"
 
-#: functions.php:155
+#: functions.php:162
 msgid "Update Topic"
 msgstr "Actualiser le sujet"
 
-#: functions.php:156
+#: functions.php:163
 msgid "View Topic"
 msgstr "Voir le sujet"
 
-#: functions.php:157
+#: functions.php:164
 msgid "Separate Topic with commas"
 msgstr "Séparez les sujet avec des virgules"
 
-#: functions.php:158
+#: functions.php:165
 msgid "Add or remove Topic"
 msgstr "Ajouter ou supprimer Sujet"
 
-#: functions.php:159 functions.php:192
+#: functions.php:166 functions.php:199
 msgid "Choose from the most used"
 msgstr "Choisissez parmi les plus utilisés"
 
-#: functions.php:160
+#: functions.php:167
 msgid "Popular Topics"
 msgstr "Sujets populaires"
 
-#: functions.php:161
+#: functions.php:168
 msgid "Search Topics"
 msgstr "Rechercher Sujets"
 
-#: functions.php:162 functions.php:195
+#: functions.php:169 functions.php:202
 msgid "Not Found"
 msgstr "Pas trouvé"
 
-#: functions.php:179
+#: functions.php:186
 msgctxt "Taxonomy General Name"
 msgid "Countries"
 msgstr "Pays"
 
-#: functions.php:180
+#: functions.php:187
 msgctxt "Taxonomy Singular Name"
 msgid "Country"
 msgstr "Pay"
 
-#: functions.php:181 index.php:163
+#: functions.php:188 index.php:174
 msgid "Countries"
 msgstr "Pays"
 
-#: functions.php:182
+#: functions.php:189
 msgid "All Countries"
 msgstr "Tous les pays"
 
-#: functions.php:183
+#: functions.php:190
 msgid "Parent Countries"
 msgstr "Pays parent"
 
-#: functions.php:184
+#: functions.php:191
 msgid "Parent Country:"
 msgstr "Pay parent"
 
-#: functions.php:185
+#: functions.php:192
 msgid "New Country Name"
 msgstr "Nom du nouveau pays"
 
-#: functions.php:186
+#: functions.php:193
 msgid "Add New Country"
 msgstr "Ajouter un nouveau pays"
 
-#: functions.php:187
+#: functions.php:194
 msgid "Edit Country"
 msgstr "Modifier Pays"
 
-#: functions.php:188
+#: functions.php:195
 msgid "Update Country"
 msgstr "Actualiser Pays"
 
-#: functions.php:189
+#: functions.php:196
 msgid "View Country"
 msgstr "Voir le Pays"
 
-#: functions.php:190
+#: functions.php:197
 msgid "Separate Country with commas"
 msgstr "séparée pays avec des virgules"
 
-#: functions.php:191
+#: functions.php:198
 msgid "Add or remove Country"
 msgstr "Ajouter ou supprimer des Pays"
 
-#: functions.php:193
+#: functions.php:200
 msgid "Popular Countries"
 msgstr "pays populaires"
 
-#: functions.php:194
+#: functions.php:201
 msgid "Search Countries"
 msgstr "Rechercher Pays"
 
-#: functions.php:213 functions.php:227
+#: functions.php:220 functions.php:234 functions.php:301 functions.php:302
 msgid "Publishers"
 msgstr "Directeurs de publication"
 
-#: functions.php:214
+#: functions.php:221 functions.php:316
 msgid "Publisher"
 msgstr "Directeur de publication"
 
-#: functions.php:215
+#: functions.php:222
 msgid "Search publishers"
 msgstr "recherche directeurs de publication"
 
-#: functions.php:216
+#: functions.php:223
 msgid "Popular publishers"
 msgstr "Directeurs de publication populaires"
 
-#: functions.php:217
+#: functions.php:224 functions.php:304
 msgid "All publishers"
 msgstr "Tous les directeurs de publication"
 
-#: functions.php:218
+#: functions.php:225
 msgid "Parent publisher"
 msgstr "Directeurs de publication parent"
 
-#: functions.php:219
+#: functions.php:226 functions.php:303
 msgid "Parent publisher:"
 msgstr "Directeur de publication parent"
 
-#: functions.php:220
+#: functions.php:227 functions.php:308
 msgid "Edit publisher"
 msgstr "Modifier directeur de publication "
 
-#: functions.php:221
+#: functions.php:228 functions.php:309
 msgid "Update publisher"
 msgstr "Actualiser le directeur de publication"
 
-#: functions.php:222
+#: functions.php:229
 msgid "Add new publisher"
 msgstr "Ajouter nouvel directeur de publication "
 
-#: functions.php:223
+#: functions.php:230
 msgid "New publisher name"
 msgstr "Ajouter le nom du directeurs de publication "
 
-#: functions.php:224
+#: functions.php:231
 msgid "Separate publishers with commas"
 msgstr "séparées avec des virgules les directeurs de publication"
 
-#: functions.php:225
+#: functions.php:232
 msgid "Add or remove publishers"
 msgstr "Ajouter ou supprimer les directeurs de publication "
 
-#: functions.php:226
+#: functions.php:233
 msgid "Choose from most used publishers"
 msgstr "Choisissez parmi les directeurs de publication les plus utilisés"
 
-#: functions.php:254
+#: functions.php:261
 msgctxt "Post Type General Name"
 msgid "Authors"
 msgstr "Auteurs"
 
-#: functions.php:255
+#: functions.php:262
 msgctxt "Post Type Singular Name"
 msgid "Author"
 msgstr "Auteur"
 
-#: functions.php:256 functions.php:257
+#: functions.php:263 functions.php:264
 msgid "Authors"
 msgstr "Auteurs"
 
-#: functions.php:258
+#: functions.php:265
 msgid "Parent author:"
 msgstr "Auteur parent"
 
-#: functions.php:259
+#: functions.php:266
 msgid "All authors"
 msgstr "Tous les auteurs"
 
-#: functions.php:260
+#: functions.php:267
 msgid "Add New author"
 msgstr "Ajouter nouvel auteur"
 
-#: functions.php:261
+#: functions.php:268 functions.php:306
 msgid "Add New"
 msgstr "Ajouter un nouveau"
 
-#: functions.php:262
+#: functions.php:269
 msgid "New author"
 msgstr "Nouveau auteur"
 
-#: functions.php:263
+#: functions.php:270
 msgid "Edit author"
 msgstr "Modifier auteur"
 
-#: functions.php:264
+#: functions.php:271
 msgid "Update author"
 msgstr "Actualiser l'auteur"
 
-#: functions.php:265
+#: functions.php:272
 msgid "View author"
 msgstr "Voir auteur"
 
-#: functions.php:266
+#: functions.php:273
 msgid "Search author"
 msgstr "Recherche auteur"
 
-#: functions.php:267
+#: functions.php:274 functions.php:312
 msgid "Not found"
 msgstr "Pas trouvé"
 
-#: functions.php:268
+#: functions.php:275 functions.php:313
 msgid "Not found in Trash"
 msgstr "Pas trouvé dans la corbeille"
 
-#: functions.php:271
+#: functions.php:278
 msgid "Author"
 msgstr "Auteur"
 
-#: functions.php:272
+#: functions.php:279
 msgid "Authors of the team"
 msgstr "Auteurs de l'équipe"
 
-#: functions.php:357
+#: functions.php:299
+#, fuzzy
+msgctxt "Post Type General Name"
+msgid "Publishers"
+msgstr "Directeurs de publication"
+
+#: functions.php:300
+#, fuzzy
+msgctxt "Post Type Singular Name"
+msgid "Publisher"
+msgstr "Directeur de publication"
+
+#: functions.php:305
+#, fuzzy
+msgid "Add New publisher"
+msgstr "Ajouter nouvel directeur de publication "
+
+#: functions.php:307
+#, fuzzy
+msgid "New publisher"
+msgstr "Ajouter le nom du directeurs de publication "
+
+#: functions.php:310
+#, fuzzy
+msgid "View publisher"
+msgstr "Modifier directeur de publication "
+
+#: functions.php:311
+#, fuzzy
+msgid "Search publisher"
+msgstr "recherche directeurs de publication"
+
+#: functions.php:317
+#, fuzzy
+msgid "Publishers of the team"
+msgstr "Auteurs de l'équipe"
+
+#: functions.php:402
 msgid ""
 "Success! Thank you, your story will be reviewed by one of our editors and "
 "soon will be online."
@@ -325,13 +367,25 @@ msgstr ""
 "Succès! Merci, votre article sera examiné par un de nos rédacteurs et sera "
 "bientôt en ligne"
 
-#: functions.php:358
+#: functions.php:403
 msgid "You're being redirect to the home page in 4 seconds."
 msgstr "Vous être rediriger vers la page d'accueil en 4 secondes."
 
-#: functions.php:360
+#: functions.php:405
 msgid "Oops, please try again in a few minutes."
 msgstr "Oops, s'il vous plaît essayer de nouveau dans quelques minutes."
+
+#: functions.php:451 functions.php:497
+msgid "Map options"
+msgstr ""
+
+#: functions.php:469
+msgid "Show Map"
+msgstr ""
+
+#: functions.php:515
+msgid "Show Map Home"
+msgstr ""
 
 #: inc/advanced-navigation.php:108
 msgid "Text search"
@@ -541,7 +595,7 @@ msgstr "Fermer"
 msgid "Finish geocoding"
 msgstr "Terminer géocodage"
 
-#: inc/submit-story.php:14 index.php:63 section-actions.php:5
+#: inc/submit-story.php:14 index.php:74 section-actions.php:5
 #: section-submit-call.php:6
 msgid "Submit a story"
 msgstr "Soumettre un article"
@@ -629,23 +683,23 @@ msgstr ""
 msgid "Could not save submission"
 msgstr "Impossible d'enregistrer votre submission"
 
-#: index.php:63
-msgid "Take action on Congo issues"
-msgstr "Prenez des mesures sur la situation de Congo"
+#: index.php:71
+msgid "Join us to improve information on Congo Basin"
+msgstr "Rejoignez-nous pour améliorer I'information sur le bassin du Congo"
 
-#: index.php:95 loop.php:23
+#: index.php:106 loop.php:23
 msgid "Read more"
 msgstr "Lire plus"
 
-#: index.php:146
+#: index.php:157
 msgid "See all stories about this topic"
 msgstr "Voir tous les articles sur ce sujet"
 
-#: index.php:202
+#: index.php:213
 msgid "See all stories about this country"
 msgstr "Voir tous les articles sur ce pays"
 
-#: index.php:233
+#: index.php:238
 msgid "Popular posts"
 msgstr "Sujets populaires"
 
@@ -759,3 +813,6 @@ msgstr "Obtenez GeoJSON"
 #: single-map.php:66
 msgid "Embed this map"
 msgstr "Intégrer cette carte"
+
+#~ msgid "Take action on Congo issues"
+#~ msgstr "Rejoignez-nous pour améliorer I'information sur le bassin du Congo"

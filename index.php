@@ -68,7 +68,7 @@
 	<div class="submit-a-story-banner">
 		<div class="container">
 			<div class="nine columns">
-				<p class="take-action"><?php _e('Take action on Congo issues' , 'infocongo'); ?></p>
+				<p class="take-action"><?php _e('Join us to improve information on Congo Basin' , 'infocongo'); ?></p>
 			</div>
 			<div class="three columns">
 				<a class="button submit-story"><?php _e('Submit a story', 'infocongo'); ?></a>
