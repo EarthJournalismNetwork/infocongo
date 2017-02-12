@@ -277,9 +277,15 @@
 		</div>
 
 		<?php
+                    // Get current language and save an another variable. 
+	            global $q_config;
+		    $lang = $q_config['language'];
+
+			// Hack. Show all map without language filter.
+			$q_config['language'] = '';
 			$query = new WP_Query(
 				array(
-	    		    'post_type' => 'map',
+					'post_type' => 'map',
 					'meta_query' => array(
 						array(
 							'key' => 'show_map_index',
@@ -288,6 +294,8 @@
 					)
 				)
 			);
+			// Save current language.
+			$q_config['language'] = $lang;
 		?>
 		<!-- <div id="map-archive" class="gray-page archive-page"> -->
 		<div id="map-archive" class="map-spotlight">
