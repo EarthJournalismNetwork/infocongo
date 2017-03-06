@@ -226,7 +226,7 @@
 <?php
 	$args = array(
 		'cat'	=> 87,
-	    'order' => 'ASC'
+	    'order' => 'DESC'
 	);
 	$fourth_query = new WP_Query($args);
 ?>
@@ -277,7 +277,7 @@
 		</div>
 
 		<?php
-                    // Get current language and save an another variable. 
+                    // Get current language and save an another variable.
 	            global $q_config;
 		    $lang = $q_config['language'];
 
