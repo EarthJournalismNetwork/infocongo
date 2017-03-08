@@ -333,6 +333,44 @@ function custom_post_type() {
   );
   register_post_type( 'publishers', $args );
 
+  // Add new type Special Reports.
+  $labels = array(
+	'name'                => _x( 'Special Reports', 'Post Type General Name', 'infocongo' ),
+	'singular_name'       => _x( 'Special Report', 'Post Type Singular Name', 'infocongo' ),
+	'menu_name'           => __( 'Special Reports', 'infocongo' ),
+	'name_admin_bar'      => __( 'Special Reports', 'infocongo' ),
+	'parent_item_colon'   => __( 'Parent special report:', 'infocongo' ),
+	'all_items'           => __( 'All special reports', 'infocongo' ),
+	'add_new_item'        => __( 'Add New special report', 'infocongo' ),
+	'add_new'             => __( 'Add New', 'infocongo' ),
+	'new_item'            => __( 'New special report', 'infocongo' ),
+	'edit_item'           => __( 'Edit special report', 'infocongo' ),
+	'update_item'         => __( 'Update special report', 'infocongo' ),
+	'view_item'           => __( 'View special report', 'infocongo' ),
+	'search_items'        => __( 'Search special report', 'infocongo' ),
+	'not_found'           => __( 'Not found', 'infocongo' ),
+	'not_found_in_trash'  => __( 'Not found in Trash', 'infocongo' ),
+  );
+  $args = array(
+	'label'               => __( 'Special Report', 'infocongo' ),
+	'description'         => __( 'Special Reports of the team', 'infocongo' ),
+	'labels'              => $labels,
+	'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
+	'hierarchical'        => false,
+	'public'              => true,
+	'show_ui'             => true,
+	'show_in_menu'        => true,
+	'menu_position'       => 5,
+	'show_in_admin_bar'   => true,
+	'show_in_nav_menus'   => true,
+	'can_export'          => true,
+	'has_archive'         => true,
+	'exclude_from_search' => true,
+	'publicly_queryable'  => true,
+	'capability_type'     => 'page',
+  );
+  register_post_type('special-reports', $args);
+
 }
 add_action( 'init', 'custom_post_type', 0 );
 
