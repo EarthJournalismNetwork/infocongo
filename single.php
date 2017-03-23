@@ -60,7 +60,7 @@
 						?>
 
 						<!-- Related Posts //-->
-						<div class="container">
+						<div class="">
                     	<?php
 	                		$orig_post = $post;
 	                		global $post;
@@ -69,7 +69,7 @@
 	                		if($tags){
                     	?>
                             	<h2><?php _e('Related posts', 'infocongo'); ?></a></h2>
-                            	<ul class="">
+                            	<ul class="list-posts special">
                        <?php
 		                    		$tag_ids = array();
 		                    		foreach($tags as $individual_tag){
