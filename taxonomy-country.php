@@ -7,7 +7,10 @@
 			<div class="taxonomy-map">
 				<?php
 					global $jeo;
-					$jeo->get_map(false, false, true); 
+					// $jeo->get_map(false, false, true);
+
+					// by mohjak: fixed issue#4 topic map id
+					$jeo->get_map(30, false, true);
 				?>
 			</div>
 			<div class="container">
@@ -40,5 +43,4 @@
 		</section>
 	</div>
 <?php get_footer(); ?>
-						
-					
+

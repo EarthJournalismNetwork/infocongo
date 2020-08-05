@@ -7,7 +7,30 @@
 			<div class="taxonomy-map">
 				<?php
 					global $jeo;
-					$jeo->get_map(false, false, true); 
+					// $jeo->get_map(false, false, true);
+
+					$term_slug = get_query_var( 'term' );
+
+					// by mohjak: fixed issue#4 topic map id
+					if ( $term_slug === 'conservation'
+						|| $term_slug === 'forests'
+						|| $term_slug === 'environmental-conflict'
+					) {
+						$jeo->get_map(30, false, true);
+					} else if ( $term_slug === 'industry'
+						|| $term_slug === 'food'
+					) {
+						$jeo->get_map(4, false, true);
+					} else if ( $term_slug === 'energy' ) {
+						$jeo->get_map(67, false, true);
+					} else if ( $term_slug === 'environmental-crime' ) {
+						$jeo->get_map(209, false, true);
+					} else if ( $term_slug === 'biodiversity') {
+						$jeo->get_map(30, false, true);
+					} else {
+						$jeo->get_map(false, false, true);
+					}
+
 				?>
 			</div>
 			<div class="container">
@@ -40,5 +63,4 @@
 		</section>
 	</div>
 <?php get_footer(); ?>
-						
-					
+

@@ -143,14 +143,15 @@ function infoamazonia_submit_post() {
 	} else {
 		$return['error'] = __('Could not save submission', 'infocongo');
 	}
-
-	header('Content Type: application/json');
+	// by mohjak 2019-12-12 fix submit story issue
+	header('Content-Type: application/json');
 	echo json_encode($return);
 	exit;
 }
 
 function json_death($o) {
-	header('Content Type: application/json');
+	// by mohjak 2019-12-12 fix submit story issue
+	header('Content-Type: application/json');
 	echo json_encode($o);
 	exit;
 }
