@@ -92,7 +92,7 @@ class infoamazonia_AdvancedNav {
 		wp_enqueue_script('moment-js');
 		wp_enqueue_style('chosen', get_stylesheet_directory_uri() . '/css/chosen.css');
 		wp_enqueue_script('jquery-ui-datepicker');
-		wp_enqueue_style('jquery-ui-smoothness', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
+		wp_enqueue_style('jquery-ui-smoothness', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css');
 
 	}
 
