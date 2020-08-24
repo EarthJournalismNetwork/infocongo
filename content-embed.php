@@ -19,7 +19,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.ico" type="image/x-icon" />
+<?php // by mohjak: fixed openearth#215 ico files in themes ?>
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <?php wp_head(); ?>
 <!-- <link rel="stylesheet" type="text/css" media="print" id="print-css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/print.css" /> -->

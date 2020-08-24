@@ -25,7 +25,8 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/css/icons.css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.ico" type="image/x-icon" />
+<?php // by mohjak: fixed openearth#215 ico files in themes ?>
+
 <?php wp_head(); ?>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/sss.min.js"></script>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/sss.css" type="text/css" media="all">
@@ -63,7 +64,7 @@ jQuery(document).ready(function($) {
 	});
 	// jQuery(document).ready(function($) {
 	// 	$("#main-header .menu_responsive .btn_responsive").click(function() {
-	// 		// Hide why slideToggle in responsive. Cannot work.	
+	// 		// Hide why slideToggle in responsive. Cannot work.
 	// 		//$("#main-nav").slideToggle();
 	// 	});
 	// });
